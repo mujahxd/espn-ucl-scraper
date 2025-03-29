@@ -2,6 +2,15 @@ import scrapy
 
 
 def fifth(lst):
+    """
+    Generator that yields consecutive chunks of 5 elements from the given list.
+
+    Args:
+        lst (list): The input list to be split into chunks.
+
+    Yields:
+        list: A sublist of 5 elements from the input list.
+    """
     start = 0
     end = 5
     while end <= len(lst):
